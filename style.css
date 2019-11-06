@@ -6,6 +6,10 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  :root {
+      --main-color: #F8765E;
+  }
   
 body {
     margin: 0;
@@ -46,7 +50,16 @@ p {
 ul {
     margin: 0px;
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
 }
+
+li {
+padding: 5%;
+}
+
+
 section {
     margin: 0px;
 }
@@ -63,6 +76,13 @@ body {
 a {
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 600px){
+    a{
+        
+    }
+    
 }
 
 header {
@@ -196,7 +216,7 @@ button {
 
 }
 
-/* ---- review ---- */
+/* ---- review 
 
 .big-square {
     width: 80%;
@@ -232,3 +252,49 @@ button {
     top: 4150px;
     
 }
+
+---- */
+
+/* ---- footer ---- */
+
+footer {
+    background-color: #F8765E;
+}
+
+footer p {
+    text-align: center;
+    text-size-adjust: 14px;
+    padding-top: 10%;
+    color: white;
+}
+
+/* ---- last ---- */
+
+.last h2 {
+    text-align: center;
+    padding-left: 37px;
+    padding-right: 37px;
+    line-height: 40px;
+}
+.last p{
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.last input {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    border-radius: 20px;
+    width: 75%;
+    padding-left: 7%;
+    padding-top: 5%;
+    background: rgb(240, 240, 240);
+}
+
+.last input::placeholder {
+    color:darkgray;
+    font-size: 0.9rem;
+    
+
