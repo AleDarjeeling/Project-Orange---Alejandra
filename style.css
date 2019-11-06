@@ -7,39 +7,70 @@ html {
     box-sizing: inherit;
   }
   
-  body {
+body {
     margin: 0;
     padding: 0;
   }
 
+h1 {
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 550;
+    font-size: 26px;
+    color: white;
+}
+h2 {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 12%;
+    color:  #F8765E;
+}
+
+h3 {
+    font-size: 19px;
+    text-align: left;
+    margin-top: 9%;
+}
+
+p {
+    font-size: 16px;
+    padding-left: 37px;
+    padding-right: 37px;
+    line-height: 32px;
+    margin-top: 7%;
+}
+
+ul {
+    margin: 0px;
+    list-style-type: none;
+}
+section {
+    margin: 0px;
+}
+
+/* ---- typography ---- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 /* ---- header ---- */
 
-  h1 {
-      margin: 0px;
-      padding-top: 50px;
-      padding-bottom: 30px;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: 550;
-      font-size: 26px;
-  }
-  ul {
-      margin: 0px;
-      list-style-type: none;
-  }
-  section {
-      margin: 0px;
-  }
-
-  a {
-      color: white;
-      text-decoration: none;
-  }
-  
+a {
+    color: white;
+    text-decoration: none;
+}
 
 header {
         background-color: #F8765E;
     }
+
+/* ---- banner ---- */
+
 
 .banner {
         background-color: #F8765E;
@@ -52,60 +83,49 @@ header {
 }
 
 .banner .banner-text1 {
-    font-size: 30px;
+    font-size: 1.7rem;
     line-height: 40px;
 }
 
 .banner img{
-    width: 286px;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10%;
 }
 
-h1{
-    color: white;
-}
 
- /* ---- typography ---- */
-
- body {
-    font-family: 'Roboto', sans-serif;
-}
-
-p {
-    font-size: 16px;
-    padding-left: 37px;
-    padding-right: 37px;
-    line-height: 32px;
-}
+/* ---- form ---- */
 
 input {
     margin: 0 auto;
     margin-top: 30px;
     display: block;
     border-radius: 20px;
-    height: 50px;
-    width: 250px;
-    padding-left: 20px;
+    width: 75%;
+    padding-left: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     border-style: none;
 }
 
 input::placeholder {
     color: rgb(175, 173, 173);
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 button {
     margin: 0 auto;
     display: block;
     border-radius: 20px;
-    height: 40px;
-    width: 150px;
+    width: 50%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     margin-top: 20px;
     background-color: #9BDBE7;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* ---- card ---- */
@@ -118,12 +138,12 @@ button {
     background-color: white;
     border-radius: 15px;
     box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.15);
-    padding-bottom: 40px;
+    padding-bottom: 10%;
 }
 
 .card h3 {
-    padding-left: 37px;
-    margin-bottom: 13px;
+    padding-left: 13%;
+    margin-bottom: 10%;
 }
 
 .card img {
@@ -132,10 +152,10 @@ button {
     margin-right: auto;
     padding-top: 50px;
     padding-bottom: 40px;
-    width: 200px;
+    width: 73%;
 }
 .underline {
-    width: 60px;
+    width: 25%;
     height: 5px;
     background-color: #F8765E;
     padding: auto;
@@ -143,6 +163,10 @@ button {
 }
 
 /* ---- premium ---- */
+
+.premium article {
+    position: relative;
+}
 
 .premium img {
     display: block;
@@ -158,12 +182,53 @@ button {
     width: 300px;
     height: 300px;
     background-color: #F8765E;
-    padding: auto;
-    margin-left: 38px;
     border-radius: 100%;
-    z-index: 10;
-    margin: auto;
-    position: relative;
-    top: -100px;
+    position: absolute;
+    top: 35px;
     z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.apple {
+    text-align: center;
+
+}
+
+/* ---- review ---- */
+
+.big-square {
+    width: 80%;
+    height: 500px;
+    background-color: #F8765E;
+    position: relative;
+    z-index: 0;
+    margin-left: 20%;
+    margin-top: 20%;
+    border-radius: 5% 0% 0% 5%;
+}
+
+.initial {
+    z-index: 5;
+    position: absolute;
+    width: 40%;
+    align-self: left;
+}
+
+.initial img {
+    width: 40%;
+    z-index: 7;
+    position: absolute;
+    top: 150px;
+}
+
+.small-square {
+    width: 70px;
+    height: 90px;
+    background-color: #9BDBE7;
+    position: absolute;
+    z-index: 5;
+    top: 4150px;
+    
 }
