@@ -26,6 +26,13 @@ h1 {
     font-size: 26px;
     color: white;
 }
+
+@media (min-width: 600px){
+    h1 {
+        display: flex;
+    }   
+}
+
 h2 {
     font-size: 23px;
     text-align: center;
@@ -50,9 +57,15 @@ p {
 ul {
     margin: 0px;
     list-style-type: none;
-    display: flex;
     justify-content: center;
     padding-left: 0;
+}
+
+@media (min-width: 600px){
+    ul {
+        justify-content: right;
+        display: flex;
+    }   
 }
 
 li {
@@ -78,13 +91,6 @@ a {
     text-decoration: none;
 }
 
-@media (min-width: 600px){
-    a{
-        
-    }
-    
-}
-
 header {
         background-color: #F8765E;
     }
@@ -95,7 +101,15 @@ header {
 .banner {
         background-color: #F8765E;
         padding-bottom: 120px;
+        
     }
+
+    @media (min-width: 600px){
+        .banner {
+            display: flex; 
+        }   
+    }
+
 
 .banner p {
     color: white;
@@ -113,6 +127,14 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding-top: 10%;
+    display: flex;
+}
+
+@media (min-width: 600px){
+    .banner img {
+        flex: 1;
+
+    }   
 }
 
 
@@ -161,6 +183,19 @@ button {
     padding-bottom: 10%;
 }
 
+@media (min-width: 600px){
+    .card {
+        display: flex; 
+    }   
+}
+
+.card article {
+    max-width: 430px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+
 .card h3 {
     padding-left: 13%;
     margin-bottom: 10%;
@@ -174,6 +209,8 @@ button {
     padding-bottom: 40px;
     width: 73%;
 }
+
+
 .underline {
     width: 25%;
     height: 5px;
